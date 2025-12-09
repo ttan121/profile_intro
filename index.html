@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Anh Tan | Future Software Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #2c3e50; --accent-color: #3498db; --text-color: #333; --bg-light: #f9f9f9; --white: #ffffff; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: var(--text-color); background-color: var(--bg-light); }
+        header { background: linear-gradient(135deg, var(--primary-color), #1a252f); color: var(--white); padding: 4rem 0; text-align: center; }
+        header h1 { margin: 0; font-size: 3rem; font-weight: 700; }
+        header p.subtitle { font-size: 1.2rem; color: #bdc3c7; margin-top: 10px; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        section { background: var(--white); margin: 30px 0; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h2 { color: var(--primary-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; display: inline-block; margin-top: 0; }
+        .hometown-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
+        .img-card { border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .img-card img { width: 100%; height: 250px; object-fit: cover; display: block; }
+        .img-card p { padding: 10px; text-align: center; font-weight: bold; color: var(--primary-color); }
+        .interests-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .tech-item { margin-bottom: 30px; }
+        .tech-item img { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; margin-bottom: 10px; border: 1px solid #eee; }
+        ul.hobby-list { list-style: none; padding: 0; }
+        ul.hobby-list li { padding: 10px 0; border-bottom: 1px dashed #eee; }
+        footer { text-align: center; padding: 20px; color: #7f8c8d; font-size: 0.9rem; }
+        @media (max-width: 768px) { .interests-wrapper { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tô Anh Tấn</h1>
+            <p class="subtitle">International Software Engineering Student</p>
+            <p style="font-size: 0.9rem; opacity: 0.8;">KNU & Thai Nguyen University of ICT</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p>Hi, my name is <strong>Tô Anh Tấn</strong>. I am eighteen years old. I am currently studying <strong>International Software Engineering – KNU</strong> at Thai Nguyen University of Information and Communication Technology.</p>
+            <p>I have a passion for technology and information systems. This is the reason I chose to pursue a degree in Software Engineering through a joint program with Kyungpook National University.</p>
+        </section>
+
+        <section id="hometown">
+            <h2><i class="fas fa-map-marker-alt"></i> My Hometown: Tuyen Quang</h2>
+            <p>My hometown is in Tuyen Quang province. It is known for its majestic natural scenery.</p>
+            <div class="hometown-grid">
+                <div class="img-card">
+                    <img src="photo/nahang.jpg" alt="Na Hang Lake">
+                    <p>Na Hang Lake - Ecotourism Site</p>
+                </div>
+                <div class="img-card">
+                    <img src="photo/lolochai.jpg" alt="Lo Lo Chai Village">
+                    <p>Lo Lo Chai Cultural Village</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="interests">
+            <h2><i class="fas fa-star"></i> Interests & Passion</h2>
+            <div class="interests-wrapper">
+                <div>
+                    <h3>Personal Hobbies</h3>
+                    <ul class="hobby-list">
+                        <li><i class="fas fa-music"></i> <strong>Listening to music</strong></li>
+                        <li><i class="fas fa-book"></i> <strong>Reading technology books</strong></li>
+                        <li><i class="fas fa-table-tennis"></i> <strong>Playing Badminton</strong></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Tech Passion</h3>
+                    <div class="tech-item">
+                        <h4>1. Robotics & AI</h4>
+                        <img src="photo/ai.jpg" alt="AI Technology">
+                        <p>Since AI is a new and developing technology, I think it will be crucial for everyone's lives in the future.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>2. Digital Media</h4>
+                        <img src="photo/digital_media.jpg" alt="Digital Media">
+                        <p>This is the most important bridge between technology and people.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer><p>&copy; 2025 Tô Anh Tấn.</p></footer>
+</body>
+</html>
